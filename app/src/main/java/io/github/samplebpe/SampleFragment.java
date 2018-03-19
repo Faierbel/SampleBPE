@@ -42,7 +42,5 @@ public class SampleFragment extends Fragment {
         viewPager.setOffscreenPageLimit(2);
         tabLayout.setupWithViewPager(viewPager);
 
-        viewPager.setCurrentItem(3, false);
-
     }
 }
