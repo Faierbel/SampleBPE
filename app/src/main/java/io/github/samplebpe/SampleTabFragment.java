@@ -11,12 +11,10 @@ import android.view.ViewGroup;
 
 public class SampleTabFragment extends Fragment {
 
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_sample_tab, container, false);
-        return view;
+        return inflater.inflate(R.layout.fragment_sample_tab, container, false);
     }
 
 }

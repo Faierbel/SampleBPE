@@ -34,13 +34,14 @@ public class SampleFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 20; i++) {
             pagerTabAdapter.addFragment(new SampleTabFragment());
         }
 
         viewPager.setAdapter(pagerTabAdapter);
         viewPager.setOffscreenPageLimit(2);
         tabLayout.setupWithViewPager(viewPager);
+        viewPager.setCurrentItem(5);
 
     }
 }
